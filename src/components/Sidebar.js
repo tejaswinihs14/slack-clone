@@ -23,11 +23,17 @@ const SidebarContainer = styled.div`
   margin-top: 60px;
   max-width: 260px;
   border-top: 1px solid #49274b;
+  overflow-y: scroll;
+  scroll-behavior: hidden;
 
   > hr {
     margin-top: 10px;
     margin-bottom: 10px;
     border: 1px solid #49274b;
+  }
+
+  @media (max-width: 767px) {
+    display: none;
   }
 `;
 

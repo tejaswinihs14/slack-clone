@@ -24,6 +24,12 @@ const HeaderLeft = styled.div`
   align-items: center;
   margin-left: 20px;
 
+  @media (max-width: 280px) {
+    > .MuiSvgIcon-root {
+      display: none;
+    }
+  }
+
   > .MuiSvgIcon-root {
     margin-left: auto;
     margin-right: 30px;
@@ -49,6 +55,12 @@ const HeaderSearch = styled.div`
   color: gray;
   border: 1px gray solid;
 
+  @media (max-width: 280px) {
+    flex: 0.4;
+    padding: 0;
+    margin-right: 20px;
+  }
+
   > input {
     background-color: transparent;
     outline: none;
@@ -63,6 +75,10 @@ const HeaderRight = styled.div`
   flex: 0.3;
   display: flex;
   align-items: flex-end;
+
+  @media (max-width: 280px) {
+    display: none;
+  }
 
   > .MuiSvgIcon-root {
     margin-left: auto;
